@@ -41,19 +41,22 @@ initial-scale=1.0" />
     
     <h3>Konfirmasi Kehadiran</h3>
 
-    <form action="https://formspree.io/f/xbdqvvro" method="POST">
+    <form id="rsvpForm" action="https://formspree.io/f/xbdqvvro" method="POST">
 
-        <input type="text" name="Nama" placeholder="Nama Anda" required>
+    <input type="text" name="Nama" placeholder="Nama Anda" required>
 
-        <input type="email" name="Email" placeholder="Email Anda" required>
+    <input type="email" name="Email" placeholder="Email Anda" required>
 
-        <select name="Kehadiran" required>
-            <option value="">Apakah Anda hadir?</option>
-            <option value="Hadir">Hadir</option>
-            <option value="Tidak Hadir">Tidak Hadir</option>
-        </select>
+    <select name="Kehadiran" required>
+        <option value="">Apakah Anda hadir?</option>
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+    </select>
 
-        <button type="submit">Kirim Konfirmasi</button>
+    <!-- tombol taruh DI SINI -->
+    <button type="submit" id="submitBtn">
+        Kirim Konfirmasi
+    </button>
 
     </form>
     </section>
