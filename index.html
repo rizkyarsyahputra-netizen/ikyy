@@ -38,38 +38,25 @@ initial-scale=1.0" />
     </section>
 
     <section class="rsvp" style="padding: 40px 20px; text-align: center; background-color: #f9f9f9;">
-            <h3 style="margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Konfirmasi Kehadiran</h3>
-   <form id="rsvpForm" action="https://formspree.io/f/xbdqvvro" method="POST">
+    
+    <h3>Konfirmasi Kehadiran</h3>
 
-    <input 
-        type="text" 
-        id="name"
-        name="name"
-        placeholder="Nama Anda" 
-        required
-    />
+    <form action="https://formspree.io/f/xbdqvvro" method="POST">
 
-    <input 
-        type="email" 
-        id="email"
-        name="email"
-        placeholder="Email"
-        required
-    />
+        <input type="text" name="Nama" placeholder="Nama Anda" required>
 
-    <select 
-        id="attendance"
-        name="attendance"
-        required>
-        
-        <option value="">Apakah Anda hadir?</option>
-        <option value="hadir">Hadir</option>
-        <option value="tidak hadir">Tidak Hadir</option>
-    </select>
+        <input type="email" name="Email" placeholder="Email Anda" required>
 
-    <button type="submit" id="submitBtn">Kirim</button>
-   </form>
-</section>
+        <select name="Kehadiran" required>
+            <option value="">Apakah Anda hadir?</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+
+        <button type="submit">Kirim Konfirmasi</button>
+
+    </form>
+    </section>
 
 <footer>
     <p>&copy; 2040 Undangan Digital ikyy. Dibuat
